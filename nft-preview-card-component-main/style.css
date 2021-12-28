@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    /* Pimary colors */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral colors */
+    --dark-c: hsl(217, 54%, 11%);
+    --base-c: hsl(216, 50%, 16%);
+    --light-c: hsl(215, 32%, 27%);
+
+}
+
+body{
+    background-color: var(--dark-c);
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+main.card-container{
+    background-color: var(--base-c);
+    max-width: 375px;
+    max-height: 95vh;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 12px;
+    padding: 5px 25px;
+}
+
+section{
+    margin: 20px 0;
+}
+
+section.picture img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+p.nft-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color:white
+}
+
+p.nft-description{
+    color: var(--soft-blue);
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+section.data{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.data p.price{
+    color: cyan
+}
+
+section.data p.publish-time{
+    color: var(--soft-blue)
+}
+
+hr{
+    color: var(--light-c)
+}
+
+
+section.creator div.avatar-container{
+    width: 40px;
+    height: 40px;
+    padding: 1px;
+
+    border: 1px solid white;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+section.creator{
+    width: 100%;
+}
+
+section.creator div.avatar-container img{
+    width: 100%;
+}
+
+section.creator p.creator-title{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 20px;
+    color: var(--soft-blue);
+}
+
+section.creator p.creator-title span.creator-name{
+    color: white
+}
