@@ -1,11 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    
+:root {
     /* Pimary colors */
     --soft-blue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
@@ -13,69 +12,70 @@
     --dark-c: hsl(217, 54%, 11%);
     --base-c: hsl(216, 50%, 16%);
     --light-c: hsl(215, 32%, 27%);
-
 }
 
-body{
-    background-color: var(--dark-c);
+body {
     width: 100%;
     height: 100vh;
+    background-color: var(--dark-c);
+
     font-size: 18px;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
-main.card-container{
-    background-color: var(--base-c);
-    max-width: 375px;
+main.card-container {
+    max-width: 340px;
     max-height: 95vh;
+    background-color: var(--base-c);
+
     margin: auto;
+    padding: 5px 25px;
+
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
     border-radius: 12px;
-    padding: 5px 25px;
 }
 
-section{
+section {
     margin: 20px 0;
 }
 
-section.picture img{
+section.picture img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-p.nft-title{
+p.nft-title {
     font-size: 1.4rem;
     font-weight: 600;
-    color:white
+    color: white;
 }
 
-p.nft-description{
+p.nft-description {
     color: var(--soft-blue);
     font-weight: 300;
     margin-top: 20px;
 }
 
-section.data{
+section.data {
     display: flex;
     justify-content: space-between;
 }
 
-section.data p.price{
-    color: cyan
+section.data p.price {
+    color: cyan;
 }
 
-section.data p.publish-time{
-    color: var(--soft-blue)
+section.data p.publish-time {
+    color: var(--soft-blue);
 }
 
-hr{
-    color: var(--light-c)
+hr {
+    color: var(--light-c);
 }
 
-
-section.creator div.avatar-container{
+section.creator div.avatar-container {
     width: 40px;
     height: 40px;
     padding: 1px;
@@ -85,15 +85,15 @@ section.creator div.avatar-container{
     display: inline-block;
 }
 
-section.creator{
+section.creator {
     width: 100%;
 }
 
-section.creator div.avatar-container img{
+section.creator div.avatar-container img {
     width: 100%;
 }
 
-section.creator p.creator-title{
+section.creator p.creator-title {
     display: inline-block;
     position: relative;
     top: 50%;
@@ -102,6 +102,6 @@ section.creator p.creator-title{
     color: var(--soft-blue);
 }
 
-section.creator p.creator-title span.creator-name{
-    color: white
+section.creator p.creator-title span.creator-name {
+    color: white;
 }
